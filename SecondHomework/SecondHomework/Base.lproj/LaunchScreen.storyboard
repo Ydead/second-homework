@@ -1,10 +1,11 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="13771" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" launchScreen="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="01J-lp-oVM">
-    <device id="retina4_0" orientation="portrait">
+    <device id="retina5_5" orientation="portrait">
         <adaptation id="fullscreen"/>
     </device>
     <dependencies>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13772"/>
+        <capability name="Aspect ratio constraints" minToolsVersion="5.1"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
@@ -14,14 +15,20 @@
             <objects>
                 <viewController id="01J-lp-oVM" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="Ze5-6b-2t3">
-                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="736"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="lilmem" translatesAutoresizingMaskIntoConstraints="NO" id="g3O-pQ-O7A">
-                                <rect key="frame" x="69" y="240.5" width="184" height="200"/>
+                                <rect key="frame" x="106.66666666666669" y="195" width="201" height="218"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" secondItem="g3O-pQ-O7A" secondAttribute="height" multiplier="23:25" id="A2z-ST-OfI"/>
+                                </constraints>
                             </imageView>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="HomeWork" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="2Vu-xf-rhV">
-                                <rect key="frame" x="113" y="120" width="89" height="21"/>
+                                <rect key="frame" x="113" y="120" width="183" height="25"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="25" id="JDN-Rd-5sF"/>
+                                </constraints>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
@@ -29,11 +36,13 @@
                         </subviews>
                         <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <constraints>
-                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="g3O-pQ-O7A" secondAttribute="trailing" constant="67" id="CBD-v5-aPO"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" relation="greaterThanOrEqual" secondItem="g3O-pQ-O7A" secondAttribute="trailing" constant="67" id="CBD-v5-aPO"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" relation="greaterThanOrEqual" secondItem="g3O-pQ-O7A" secondAttribute="bottom" constant="127.5" id="I8X-ip-JaB"/>
                             <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="2Vu-xf-rhV" secondAttribute="trailing" constant="118" id="T5b-Vm-Fpe"/>
-                            <constraint firstItem="g3O-pQ-O7A" firstAttribute="top" secondItem="2Vu-xf-rhV" secondAttribute="bottom" constant="100" id="TmS-BZ-Znp"/>
+                            <constraint firstItem="g3O-pQ-O7A" firstAttribute="top" secondItem="2Vu-xf-rhV" secondAttribute="bottom" constant="50" id="TmS-BZ-Znp"/>
                             <constraint firstItem="2Vu-xf-rhV" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="113" id="bCa-kF-zQr"/>
-                            <constraint firstItem="g3O-pQ-O7A" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="69" id="tlG-Jl-RJE"/>
+                            <constraint firstItem="g3O-pQ-O7A" firstAttribute="centerX" secondItem="Ze5-6b-2t3" secondAttribute="centerX" id="dqo-IC-zOh"/>
+                            <constraint firstItem="g3O-pQ-O7A" firstAttribute="leading" relation="greaterThanOrEqual" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="69" id="tlG-Jl-RJE"/>
                             <constraint firstItem="2Vu-xf-rhV" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="100" id="uSA-po-s8E"/>
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
